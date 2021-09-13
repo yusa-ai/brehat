@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Bootstrap */
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.nav-link {
+    font-size: 14px;
+    letter-spacing: .08em;
+    margin-left: 1em;
+}
+
+/* Classes personnelles */
+
+.pad {
+    padding-left: 20em;
+    padding-right: 20em;
+}
