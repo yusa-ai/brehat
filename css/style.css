@@ -2,22 +2,24 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-
+:root {
+    --padding: 17.5%;
+}
 /* Bootstrap */
 
 .navbar-brand {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .nav-link {
     font-size: 14px;
-    letter-spacing: .08em;
-    margin-left: 1em;
+    letter-spacing: .08rem;
+    margin-left: 1rem;
 }
 
 /* Classes personnelles */
 
-.pad {
-    padding-left: 20em;
-    padding-right: 20em;
+.content-pad {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
 }
