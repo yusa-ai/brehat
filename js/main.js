@@ -1,13 +1,27 @@
-const websiteName = ' - ÎLE-DE-BRÉHAT';
+const WEBSITE_NAME = ' - ÎLE-DE-BRÉHAT';
 
-function changePageTitle(page) {
-    switch (page) {
+function getCurrentPage() {
+    let url = window.location.pathname.substr(1);
+    return url.split('.')[0];
+}
+
+function initialize(webpage) {
+    let title;
+
+    switch (webpage) {
+        case 'municipalite':
+            title = 'Municipalité : la mairie de Bréhat en détail';
+            break;
         default:
-            document.title = 'Commune d\'Île-de-Bréhat, site officiel'.concat(websiteName);
+            webpage = 'index';
+            title = 'Commune d\'Île-de-Bréhat, site officiel';
     }
+
+    document.title = title.concat(WEBSITE_NAME);
+    document.getElementById(webpage).classList.add('active');
 }
 
 window.onload = function () {
-    const page = document.URL.split('/').pop();
-    changePageTitle(page);
+    let webpage = getCurrentPage();
+    initialize(webpage);
 }
