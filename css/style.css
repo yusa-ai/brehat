@@ -1,25 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
+
 :root {
-    --padding: 17.5%;
+	--global-padding: 17.5%;
 }
+
+
 /* Bootstrap */
 
+.active {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
 .navbar-brand {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .nav-link {
-    font-size: 14px;
-    letter-spacing: .08rem;
-    margin-left: 1rem;
+	font-size: 14px;
+	letter-spacing: .08rem;
+	margin-right: 1.5rem;
+    position: relative;
 }
 
 /* Classes personnelles */
 
-.content-pad {
-    padding-left: var(--padding);
-    padding-right: var(--padding);
+.global {
+	padding-left: var(--global-padding);
+	padding-right: var(--global-padding);
 }
