@@ -34,3 +34,12 @@ body {
 	padding-left: var(--global-padding);
 	padding-right: var(--global-padding);
 }
+
+#brehat-background {
+	background-attachment: fixed;
+	background-image: url("../img/brehat_background.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
