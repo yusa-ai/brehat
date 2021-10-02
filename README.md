@@ -1,6 +1,6 @@
 # MPA
-Projet MPA  
-Mission 1 : refonte du site web
+Mission 1 : Refonte du site web
+Mission 2 : Analyse de données
 
 ## Membres de l'équipe
 - BARTHE Marion
