@@ -3,11 +3,13 @@ $(window).scroll(function() {
     let scroll = $(window).scrollTop();
 
     if (scroll > 0) {
+        // Fond bleu
         $(".navbar").removeAttr("style");
         $(".navbar").css("background", "linear-gradient(to right, #10527E, #197bbd)");
         $(".navbar").css("padding-top", "0");
         $(".navbar").css("padding-bottom", "0");
     } else {
+        // Fond transparent
         $(".navbar").removeAttr("style");
         $(".navbar").css("background-color", "transparent");
         $(".navbar").css("padding-top", "10px");
