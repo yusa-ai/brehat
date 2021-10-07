@@ -1,9 +1,8 @@
-// Change le fond et la taille de la navbar en fonction de la position du scroll sur la page
-$(window).scroll(function() {
+function changerFondNavbar() {
     let scroll = $(window).scrollTop();
     let navbar = $(".navbar");
 
-    if (scroll > 0) {
+    if (!collapsed || scroll > 0) {
         // Fond bleu
         navbar.removeAttr("style");
         navbar.css("background", "linear-gradient(to right, #10527E, #197bbd)");
@@ -16,4 +15,21 @@ $(window).scroll(function() {
         navbar.css("padding-top", "10px");
         navbar.css("padding-bottom", "10px");
     }
+}
+
+let collapsed = true;
+
+let navbar = document.getElementById("navbarNav");
+navbar.addEventListener("hidden.bs.collapse", function() {
+    collapsed = true;
+    changerFondNavbar();
+})
+navbar.addEventListener("shown.bs.collapse", function() {
+    collapsed = false;
+    changerFondNavbar();
+})
+
+// Change le fond et la taille de la navbar en fonction de la position du scroll sur la page
+$(window).scroll(function() {
+    changerFondNavbar();
 });
