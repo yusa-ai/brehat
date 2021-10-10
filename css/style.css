@@ -4,6 +4,7 @@ body {
 
 :root {
     --global-padding: 17.5%;
+
     --global-blue: #14679e;
     --global-red: #c8092f;
     --global-black: #151414FF;
@@ -112,7 +113,7 @@ body {
 
 .row-striped:nth-of-type(odd) {
     background-color: rgba(198, 197, 197, 0.37);
-    border-left: 4px #000000 solid;
+    border-left: 4px var(--global-red) solid;
 }
 
 .row-striped:nth-of-type(even) {
@@ -124,8 +125,9 @@ body {
     padding: 15px 0;
 }
 
-.link-nostyle, .link-nostyle:hover {
+.clickable, .clickable:hover {
     color: inherit;
+    cursor: pointer;
     text-decoration: none;
 }
 
