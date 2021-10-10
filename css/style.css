@@ -7,11 +7,14 @@ body {
 
     --global-blue: #14679e;
     --global-red: #c8092f;
-    --global-black: #151414FF;
+    --global-white: #0000000C;
 }
 
-
 /* Navbar */
+
+.navbar {
+    background-color: var(--global-blue);
+}
 
 .nav-link.active {
     text-decoration: underline;
@@ -32,7 +35,7 @@ body {
 
 .dropdown-menu {
     border: 0;
-    background-color: var(--global-black);
+    background-color: var(--global-blue);
 }
 
 .dropdown-item:hover {
@@ -51,7 +54,7 @@ body {
 
 .carousel-item img {
     object-fit: cover;
-    opacity: 0.75;
+    opacity: 1;
 }
 
 .btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:visited {
@@ -87,7 +90,7 @@ body {
 }
 
 #tourisme {
-    background-color: var(--global-black);
+    background-color: white;
 }
 
 #actualites {
@@ -108,7 +111,7 @@ body {
 }
 
 #evenements {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--global-white);
 }
 
 .row-striped:nth-of-type(odd) {
@@ -117,7 +120,7 @@ body {
 }
 
 .row-striped:nth-of-type(even) {
-    background-color: rgba(0, 0, 0, 0.07);
+    background-color: rgba(0, 0, 0, 0.02);
     border-left: 4px rgba(198, 197, 197, 0.57) solid;
 }
 
