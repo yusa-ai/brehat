@@ -106,7 +106,7 @@ body {
 }
 
 #evenements {
-    background-color: rgba(255, 255, 255, 0.89);
+    background-color: rgb(255, 255, 255);
 }
 
 .row-striped:nth-of-type(odd) {
@@ -115,7 +115,7 @@ body {
 }
 
 .row-striped:nth-of-type(even) {
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.07);
     border-left: 4px rgba(198, 197, 197, 0.57) solid;
 }
 
