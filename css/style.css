@@ -4,8 +4,9 @@ body {
 
 :root {
     --global-padding: 17.5%;
+    --global-blue: #14679e;
     --global-red: #c8092f;
-    --carousel-background: #151414FF;
+    --global-black: #151414FF;
 }
 
 
@@ -30,7 +31,7 @@ body {
 
 .dropdown-menu {
     border: 0;
-    background-color: var(--carousel-background);
+    background-color: var(--global-black);
 }
 
 .dropdown-item:hover {
@@ -85,7 +86,7 @@ body {
 }
 
 #tourisme {
-    background-color: var(--carousel-background);
+    background-color: var(--global-black);
 }
 
 #actualites {
@@ -126,4 +127,8 @@ body {
 .link-nostyle, .link-nostyle:hover {
     color: inherit;
     text-decoration: none;
+}
+
+#footer {
+    background-color: var(--global-blue);
 }

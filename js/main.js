@@ -3,8 +3,8 @@ function changerFondNavbar() {
     let navbar = $(".navbar");
     let services = $(".dropdown-menu");
 
-    let blue = "#14679e";
-    let carouselBackground = getComputedStyle(document.documentElement).getPropertyValue("--carousel-background");
+    let black = getComputedStyle(document.documentElement).getPropertyValue("--global-black");
+    let blue = getComputedStyle(document.documentElement).getPropertyValue("--global-blue");
 
     if (!collapsed || scroll > 0) {
         // Fond bleu
@@ -22,7 +22,7 @@ function changerFondNavbar() {
         navbar.css("background-color", "transparent");
         navbar.css("padding-top", "10px");
         navbar.css("padding-bottom", "10px");
-        services.css("background-color", carouselBackground);
+        services.css("background-color", black);
     }
 }
 
