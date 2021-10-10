@@ -19,17 +19,17 @@ function changerFondNavbar() {
 
 let collapsed = true;
 
-let navbar = document.getElementById("navbarNav");
-navbar.addEventListener("hidden.bs.collapse", function() {
+let navbar = document.getElementById("navbar");
+navbar.addEventListener("hidden.bs.collapse", function () {
     collapsed = true;
     changerFondNavbar();
 })
-navbar.addEventListener("shown.bs.collapse", function() {
+navbar.addEventListener("shown.bs.collapse", function () {
     collapsed = false;
     changerFondNavbar();
 })
 
 // Change le fond et la taille de la navbar en fonction de la position du scroll sur la page
-$(window).scroll(function() {
+$(window).scroll(function () {
     changerFondNavbar();
 });

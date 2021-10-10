@@ -2,188 +2,193 @@
 <html lang="fr">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link crossorigin href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./img/favicon.png" rel="shortcut icon" type="image/png">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Commune d'Île-de-Bréhat, site officiel - ÎLE-DE-BRÉHAT</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-xxl g-padding fixed-top">
-        <div class="container-fluid">
+<nav class="navbar navbar-dark navbar-expand-xxl g-padding fixed-top">
+    <div class="container-fluid">
 
-            <!--Logo et nom du site-->
-            <a class="navbar-brand" href="./index.htm">
-                <img src="img/logo.png" alt="Logo Île-de-Bréhat" width="33" height="24" class="d-inline-block align-baseline mx-2"> Île-de-Bréhat
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!--Logo et nom du site-->
+        <a class="navbar-brand" href="./index.htm">
+            <img alt="Logo Île-de-Bréhat" class="d-inline-block align-baseline mx-2" height="24" src="img/logo.png"
+                 width="33"> Île-de-Bréhat
+        </a>
+        <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!--Menus de navigation-->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-uppercase text-center">
-                    <li class="nav-item">
-                        <a href="./index.htm" class="nav-link text-nowrap text-light active">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-nowrap text-light">Municipalité</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-nowrap text-light">Services municipaux</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-nowrap text-light">Activités et découverte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-nowrap text-light">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!--Tourisme-->
-    <div class="container-fluid g-padding pt-5 pb-5" id="tourisme">
-        <div id="carousel" class="carousel slide carousel-fade pt-5" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/tourisme/brehat.jpg" class="d-block w-100 h-100" alt="Bienvenue sur l'Île-de-Bréhat !">
-                    <div class="carousel-caption">
-                        <h5>Bienvenue sur l'Île-de-Bréhat !</h5>
-                        <button type="button" class="btn btn-danger rounded-0">Plus d'informations</button>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/tourisme/office.jpg" class="d-block w-100 h-100" alt="Office du tourisme">
-                    <div class="carousel-caption">
-                        <h5>Office du tourisme</h5>
-                        <button type="button" class="btn btn-danger rounded-0">Plus d'informations</button>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/tourisme/port.jpg" class="d-block w-100 h-100" alt="Port et navette">
-                    <div class="carousel-caption">
-                        <h5>Port et navettes</h5>
-                        <button type="button" class="btn btn-danger rounded-0">Plus d'informations</button>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/tourisme/chapelle.jpg" class="d-block w-100 h-100" alt="Patrimoine et histoire">
-                    <div class="carousel-caption">
-                        <h5>Patrimoine et histoire</h5>
-                        <button type="button" class="btn btn-danger rounded-0">Plus d'informations</button>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <!--Menus de navigation-->
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto text-uppercase text-center">
+                <li class="nav-item">
+                    <a class="nav-link text-nowrap text-light active" href="./index.htm">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-nowrap text-light" href="#">Municipalité</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-nowrap text-light" href="#">Services municipaux</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-nowrap text-light" href="#">Activités et découverte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-nowrap text-light" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
     </div>
+</nav>
 
-    <!--Actualités-->
-    <div class="container-fluid pb-5 g-padding" id="actualites">
-        <div class="row">
-            <!--Actualités (articles)-->
-            <div class="col-md-8">
-                <p class="display-6 text-light">Les Actualités</p>
-                <div class="d-inline-flex">
-                    <div class="card p-0 rounded-0 border-0 w-100">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Repas des aînés – dimanche 7 novembre 2021</h5>
-                            <div class="actualite-tags">
-                                <p class="badge bg-danger text-uppercase"><a class="link-nostyle" href="#">A la une</a></p>
-                            </div>
-                            <h6 class="card-subtitle mb-2 text-muted">Publié le 16/09/2021</h6>
-                            <p class="card-text">
-                                Les élus de l’Île-de-Bréhat ont le plaisir de vous informer que le
-                                repas des aînés est prévu dimanche 7 novembre 2021...
-                            </p>
-                            <a href="#" class="card-link">Lire la suite</a>
-                        </div>
-                    </div>
-                    <div class="card p-0 rounded-0 border-0 w-100">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Festival Les Scènes de Bréhat</h5>
-                            <div class="actualite-tags">
-                                <p class="badge bg-danger text-uppercase"><a class="link-nostyle" href="#">A la une</a></p>
-                                <p class="badge bg-danger text-uppercase"><a class="link-nostyle" href="#">Bréhat Infos</a></p>
-                            </div>
-                            <h6 class="card-subtitle mb-2 text-muted">Publié le 27/07/2021</h6>
-                            <p class="card-text">
-                                Ravie d’avoir permis la réalisation du premier festival Les Scènes de Bréhat,
-                                la mairie de Bréhat félicite l’organisation et les artistes pour la bonne tenue et
-                                la qualité du festival...
-                            </p>
-                            <a href="#" class="card-link">Lire la suite</a>
-                        </div>
-                    </div>
-                    <div class="card p-0 rounded-0 border-0 w-100">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Enquête : que deviennent vos biodéchets ?</h5>
-                            <div class="actualite-tags">
-                                <p class="badge bg-danger text-uppercase"><a class="link-nostyle" href="#">Bréhat Infos</a></p>
-                            </div>
-                            <h6 class="card-subtitle mb-2 text-muted">Publié le 18/05/2021</h6>
-                            <p class="card-text">
-                                Nos déchets de cuisine sont aujourd’hui en grande partie collectés parmi les
-                                ordures ménagères et expédiés sur le continent pour y être incinérés : ils participent
-                                au coût très élevé de la gestion des déchets payé par chacun des contribuables...
-                            </p>
-                            <a href="#" class="card-link">Lire la suite</a>
-                        </div>
-                    </div>
+<!--Tourisme-->
+<div class="container-fluid g-padding pt-4 pb-5" id="tourisme">
+    <div class="carousel slide carousel-fade pt-5" data-bs-ride="carousel" id="carousel">
+        <div class="carousel-indicators">
+            <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carousel"
+                    type="button"></button>
+            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carousel" type="button"></button>
+            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carousel" type="button"></button>
+            <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carousel" type="button"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img alt="Bienvenue sur l'Île-de-Bréhat !" class="d-block w-100 h-100" src="img/tourisme/brehat.jpg">
+                <div class="carousel-caption">
+                    <h5>Bienvenue sur l'Île-de-Bréhat !</h5>
+                    <button class="btn btn-danger rounded-0" type="button">Plus d'informations</button>
                 </div>
             </div>
+            <div class="carousel-item">
+                <img alt="Office du tourisme" class="d-block w-100 h-100" src="img/tourisme/office.jpg">
+                <div class="carousel-caption">
+                    <h5>Office du tourisme</h5>
+                    <button class="btn btn-danger rounded-0" type="button">Plus d'informations</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img alt="Port et navette" class="d-block w-100 h-100" src="img/tourisme/port.jpg">
+                <div class="carousel-caption">
+                    <h5>Port et navettes</h5>
+                    <button class="btn btn-danger rounded-0" type="button">Plus d'informations</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img alt="Patrimoine et histoire" class="d-block w-100 h-100" src="img/tourisme/chapelle.jpg">
+                <div class="carousel-caption">
+                    <h5>Patrimoine et histoire</h5>
+                    <button class="btn btn-danger rounded-0" type="button">Plus d'informations</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel" type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel" type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
 
-            <!--Widgets-->
-            <div class="col-lg-4 d-flex flex-column align-self-center px-0" style="height: 400px;">
-                <!--Météo-->
-                <div class="p-2" style="height: 60%;">
-                    <div class="p-4 rounded h-100 position-relative" id="side-meteo">
-                        <p class="badge text-dark" style="background-color: yellow;">Météo</p>
-                        <div class="position-absolute top-50 start-50 translate-middle">
-                            <div class="text-center text-light display-6 lh-1">
-                                <i class="bi bi-cloud-sun" style="font-size: 5rem;"></i>18°
-                                <br><span style="font-size: 1.5rem;">Éclaircies</span>
-                            </div>
+<!--Actualités-->
+<div class="container-fluid pb-5 g-padding" id="actualites">
+    <div class="row">
+        <!--Actualités (articles)-->
+        <div class="col-md-8">
+            <p class="display-6 text-light">Les Actualités</p>
+            <div class="d-inline-flex">
+                <div class="card p-0 rounded-0 border-0 w-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Repas des aînés – dimanche 7 novembre 2021</h5>
+                        <div class="actualite-tags">
+                            <p class="badge bg-danger text-uppercase"><a class="link-nostyle" href="#">A la une</a></p>
                         </div>
+                        <h6 class="card-subtitle mb-2 text-muted">Publié le 16/09/2021</h6>
+                        <p class="card-text">
+                            Les élus de l’Île-de-Bréhat ont le plaisir de vous informer que le
+                            repas des aînés est prévu dimanche 7 novembre 2021...
+                        </p>
+                        <a class="card-link" href="#">Lire la suite</a>
                     </div>
                 </div>
-                <!--COVID-19-->
-                <div class="p-2" style="height: 40%;">
-                    <div class="p-4 rounded h-100" id="side-covid">
-                        <p class="badge text-dark" style="background-color: limegreen">Infos COVID-19</p>
-                        <p class="text-center fw-bolder">Pas de cas positif</p>
+                <div class="card p-0 rounded-0 border-0 w-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Festival Les Scènes de Bréhat</h5>
+                        <div class="actualite-tags">
+                            <p class="badge bg-danger text-uppercase"><a class="link-nostyle" href="#">A la une</a></p>
+                            <p class="badge bg-danger text-uppercase"><a class="link-nostyle" href="#">Bréhat Infos</a>
+                            </p>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">Publié le 27/07/2021</h6>
+                        <p class="card-text">
+                            Ravie d’avoir permis la réalisation du premier festival Les Scènes de Bréhat,
+                            la mairie de Bréhat félicite l’organisation et les artistes pour la bonne tenue et
+                            la qualité du festival...
+                        </p>
+                        <a class="card-link" href="#">Lire la suite</a>
+                    </div>
+                </div>
+                <div class="card p-0 rounded-0 border-0 w-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Enquête : que deviennent vos biodéchets ?</h5>
+                        <div class="actualite-tags">
+                            <p class="badge bg-danger text-uppercase"><a class="link-nostyle" href="#">Bréhat Infos</a>
+                            </p>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">Publié le 18/05/2021</h6>
+                        <p class="card-text">
+                            Nos déchets de cuisine sont aujourd’hui en grande partie collectés parmi les
+                            ordures ménagères et expédiés sur le continent pour y être incinérés : ils participent
+                            au coût très élevé de la gestion des déchets payé par chacun des contribuables...
+                        </p>
+                        <a class="card-link" href="#">Lire la suite</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" crossorigin></script>
-    <script src="./js/main.js"></script>
+        <!--Widgets-->
+        <div class="col-lg-4 d-flex flex-column align-self-center px-0" style="height: 400px;">
+            <!--Météo-->
+            <div class="p-2" style="height: 60%;">
+                <div class="p-4 rounded h-100 position-relative" id="side-meteo">
+                    <p class="badge text-dark" style="background-color: yellow;">Météo</p>
+                    <div class="position-absolute top-50 start-50 translate-middle">
+                        <div class="text-center text-light display-6 lh-1">
+                            <i class="bi bi-cloud-sun" style="font-size: 5rem;"></i>18°
+                            <br><span style="font-size: 1.5rem;">Éclaircies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--COVID-19-->
+            <div class="p-2" style="height: 40%;">
+                <div class="p-4 rounded h-100" id="side-covid">
+                    <p class="badge text-dark" style="background-color: limegreen">Infos COVID-19</p>
+                    <p class="text-center fw-bolder">Pas de cas positif</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script crossorigin src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script crossorigin src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 
 </html>
