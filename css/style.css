@@ -37,6 +37,10 @@ body {
     color: black !important;
 }
 
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item:visited {
+    background-color: white;
+}
+
 /* Tourisme */
 
 .carousel-item {
@@ -67,7 +71,13 @@ body {
     font-size: .85rem;
 }
 
-/* Classes personnelles */
+/* Événements */
+
+.bg-danger {
+    background-color: var(--global-red) !important;
+}
+
+/* Classes personnalisées */
 
 .g-padding {
     padding-left: var(--global-padding);
@@ -93,6 +103,24 @@ body {
 
 #side-covid {
     background-color: #8fb838;
+}
+
+#evenements {
+    background-color: rgba(255, 255, 255, 0.89);
+}
+
+.row-striped:nth-of-type(odd) {
+    background-color: rgba(198, 197, 197, 0.37);
+    border-left: 4px #000000 solid;
+}
+
+.row-striped:nth-of-type(even) {
+    background-color: #ffffff;
+    border-left: 4px rgba(198, 197, 197, 0.57) solid;
+}
+
+.row-striped {
+    padding: 15px 0;
 }
 
 .link-nostyle, .link-nostyle:hover {
