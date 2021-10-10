@@ -22,7 +22,7 @@ body {
     text-decoration: none;
 }
 
-.btn:focus,.btn:active {
+.btn:focus, .btn:active {
     outline: none !important;
     box-shadow: none;
 }
