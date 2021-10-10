@@ -6,6 +6,7 @@ body {
     --global-padding: 17.5%;
 
     --global-blue: #14679e;
+    --global-green: #90b937;
     --global-red: #c8092f;
     --global-white: #0000000C;
 }
@@ -19,6 +20,18 @@ body {
     color: inherit;
     cursor: pointer;
     text-decoration: none;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+/* Bannière */
+
+#banniere {
+    background: url("../img/banner.png") 0 40%;
+    height: 250px;
 }
 
 /* Navbar */
@@ -56,6 +69,10 @@ body {
     background-color: white;
 }
 
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
 /* Tourisme */
 
 #tourisme {
@@ -75,9 +92,9 @@ body {
     border-color: var(--global-red) !important;
 }
 
-/* Actualités */
+/* Bulletin municipal */
 
-#actualites {
+#bulletin {
     background-attachment: fixed;
     background-image: url("../img/brehat.png");
     background-position: center center;
@@ -91,7 +108,7 @@ body {
 }
 
 #side-covid {
-    background-color: #8fb838;
+    background-color: var(--global-green);
 }
 
 .card {
@@ -133,5 +150,34 @@ body {
 /* Footer */
 
 #footer {
-    background-color: var(--global-blue);
+    background: linear-gradient(to right, #10527E, #197bbd);
+}
+
+.footer-copy, .footer-link {
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    background-color: var(--global-green);
+}
+
+/* Bouton de retour en haut de page */
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    width: 37px;
+    height: 37px;
+}
+
+#scroll-to-top:hover {
+    background-color: var(--global-red) !important;
+    border-color: var(--global-red) !important;
+}
+
+.btn-success {
+    background-color: var(--global-green) !important;
+    border-color: var(--global-green) !important;
 }
