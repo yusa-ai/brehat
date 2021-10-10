@@ -10,6 +10,17 @@ body {
     --global-white: #0000000C;
 }
 
+.g-padding {
+    padding-left: var(--global-padding);
+    padding-right: var(--global-padding);
+}
+
+.clickable, .clickable:hover {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /* Navbar */
 
 .navbar {
@@ -30,7 +41,6 @@ body {
     font-size: 14px;
     letter-spacing: .08rem;
     margin-right: 1.5rem;
-    position: relative;
 }
 
 .dropdown-menu {
@@ -48,13 +58,16 @@ body {
 
 /* Tourisme */
 
+#tourisme {
+    background-color: var(--global-white);
+}
+
 .carousel-item {
     height: 600px;
 }
 
 .carousel-item img {
     object-fit: cover;
-    opacity: 1;
 }
 
 .btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:visited {
@@ -63,35 +76,6 @@ body {
 }
 
 /* Actualités */
-
-.card {
-    margin-right: 10px;
-}
-
-.card-body {
-    border-bottom: 10px solid var(--global-red);
-}
-
-.card-subtitle {
-    font-size: .85rem;
-}
-
-/* Événements */
-
-.bg-danger {
-    background-color: var(--global-red) !important;
-}
-
-/* Classes personnalisées */
-
-.g-padding {
-    padding-left: var(--global-padding);
-    padding-right: var(--global-padding);
-}
-
-#tourisme {
-    background-color: white;
-}
 
 #actualites {
     background-attachment: fixed;
@@ -109,6 +93,20 @@ body {
 #side-covid {
     background-color: #8fb838;
 }
+
+.card {
+    margin-right: 10px;
+}
+
+.card-body {
+    border-bottom: 10px solid var(--global-red);
+}
+
+.card-subtitle {
+    font-size: .85rem;
+}
+
+/* Événements */
 
 #evenements {
     background-color: var(--global-white);
@@ -128,11 +126,11 @@ body {
     padding: 15px 0;
 }
 
-.clickable, .clickable:hover {
-    color: inherit;
-    cursor: pointer;
-    text-decoration: none;
+.bg-danger {
+    background-color: var(--global-red) !important;
 }
+
+/* Footer */
 
 #footer {
     background-color: var(--global-blue);
