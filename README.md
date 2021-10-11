@@ -32,4 +32,4 @@ Groupe 204
 
 ## Notes
 
-Lien du site original : [Commune d'Ile-de-Bréhat](https://www.iledebrehat.fr/)
+Lien du site original : [Commune d&apos;&#xEF;le-de-Br&#xE9;hat, site officiel - &#xCE;LE-DE-BR&#xC9;HAT](https://www.iledebrehat.fr/)
