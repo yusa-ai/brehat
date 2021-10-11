@@ -7,6 +7,6 @@ $(window).scroll(function () {
     }
 });
 
-btn.on("click", function() {
+btn.on("click", function () {
     window.scrollTo(0, 0);
 });
