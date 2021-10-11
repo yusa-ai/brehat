@@ -27,12 +27,6 @@ body {
     box-shadow: none;
 }
 
-/* Bannière */
-
-#banniere {
-    background: url("../img/banner.png") 0 40%;
-    height: 250px;
-}
 
 /* Navbar */
 
@@ -71,6 +65,13 @@ body {
 
 .dropdown:hover > .dropdown-menu {
     display: block;
+}
+
+/* Bannière */
+
+#banniere {
+    background: url("../img/banner.png") 0 40%;
+    height: 250px;
 }
 
 /* Tourisme */
