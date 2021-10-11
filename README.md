@@ -28,7 +28,7 @@ Source : [PJS3 2021-22.pdf](./PJS3%202021-2022.pdf)
 * MALONZO Ryan
 * PESSEY Julie
 
-Groupe 204
+Groupe 204 (semestre 3)
 
 ## Notes
 
