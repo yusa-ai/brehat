@@ -1,3 +1,5 @@
+/* Bouton de retour en haut de page */
+
 let btn = $("#scroll-to-top");
 $(window).scroll(function () {
     if ($(window).scrollTop() > 300) {
