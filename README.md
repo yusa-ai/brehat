@@ -1,4 +1,4 @@
-![mairie](./img/logo.svg)
+![mairie](https://raw.githubusercontent.com/yusa-ai/mpa/main/img/logo.svg?token=APPMWKUDOQYBMAIZ2K4D35TBNWKQC)
 
 # Méthode de Production d'Application
 
