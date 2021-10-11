@@ -72,13 +72,12 @@ body {
     display: block;
 }
 
-/* Spacer */
-
-#spacer {
-    height: 150px;
-}
 
 /* Tourisme */
+
+#tourisme {
+    margin-top: 150px;
+}
 
 .carousel-item {
     height: 600px;
