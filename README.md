@@ -5,7 +5,7 @@
 Ce repo contient le code source ainsi que les fichiers Access (dossier data) correspondant aux deux missions du projet
 de Méthode de Production d'Application (MPA) :
 
-* Mission 1 : Refonte du site web de l'île-de-Bréhat
+* Mission 1 : Refonte du site web de l'Île-de-Bréhat
 * Mission 2 : Analyse de données
 
 Ce projet a été réalisé dans le cadre du projet de MPA dispensé en deuxième année de DUT Informatique à l'IUT de Paris,
