@@ -1,0 +1,174 @@
+:root {
+    --global-padding: 17.5%;
+
+    --global-blue: #14679e;
+    --global-green: #90b937;
+    --global-red: #c8092f;
+    --global-white: #0000000C;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url("../img/background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+.g-padding {
+    padding-left: var(--global-padding);
+    padding-right: var(--global-padding);
+}
+
+.clickable, .clickable:hover {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--global-blue);
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 14px;
+    letter-spacing: .08rem;
+    margin-right: 1.5rem;
+}
+
+.dropdown-menu {
+    border: 0;
+    background-color: var(--global-blue);
+}
+
+.dropdown-item:hover {
+    color: black !important;
+}
+
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item:visited {
+    background-color: white;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+
+/* Tourisme */
+
+#tourisme {
+    margin-top: 150px;
+}
+
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:visited {
+    background-color: var(--global-red) !important;
+    border-color: var(--global-red) !important;
+}
+
+/* Bulletin municipal */
+
+#bulletin {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#side-meteo {
+    background-color: #197bbd;
+}
+
+#side-covid {
+    background-color: var(--global-green);
+}
+
+.card {
+    margin-right: 10px;
+}
+
+.card-body {
+    border-bottom: 10px solid var(--global-red);
+}
+
+.card-subtitle {
+    font-size: .85rem;
+}
+
+/* Événements */
+
+.row-striped:nth-of-type(odd) {
+    background-color: rgba(198, 197, 197, 0.37);
+    border-left: 4px var(--global-red) solid;
+}
+
+.row-striped:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-left: 4px rgba(198, 197, 197, 0.57) solid;
+}
+
+.row-striped {
+    padding: 15px 0;
+}
+
+.bg-danger {
+    background-color: var(--global-red) !important;
+}
+
+/* Footer */
+
+#footer {
+    background: linear-gradient(to right, #10527E, #197bbd);
+}
+
+.footer-link {
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    background-color: var(--global-green);
+}
+
+/* Bouton de retour en haut de page */
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    width: 37px;
+    height: 37px;
+}
+
+#scroll-to-top:hover {
+    background-color: var(--global-red) !important;
+    border-color: var(--global-red) !important;
+}
+
+.btn-success {
+    background-color: var(--global-green) !important;
+    border-color: var(--global-green) !important;
+}
