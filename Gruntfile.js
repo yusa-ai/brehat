@@ -1,5 +1,25 @@
 module.exports = function (grunt) {
     grunt.initConfig({
+        responsive_images: {
+            task: {
+                options: {
+                    sizes: [{
+                        width: 320,
+                    }, {
+                        width: 640,
+                    }, {
+                        width: 1024,
+                    }],
+                    engine: 'im'
+                },
+                files: [{
+                    expand: true,
+                    src: ['**.{jpg,gif,png}'],
+                    cwd: './img',
+                    custom_dest: './dist/img/{%= width %}/'
+                }]
+            }
+        },
         purgecss: {
             bootstrap: {
                 options: {
@@ -32,6 +52,7 @@ module.exports = function (grunt) {
         }
     })
 
+    grunt.loadNpmTasks('grunt-responsive-images');
     grunt.loadNpmTasks('grunt-purgecss');
     grunt.loadNpmTasks('grunt-critical');
 }
