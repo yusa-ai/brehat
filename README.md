@@ -11,6 +11,22 @@ de Méthode de Production d'Application (MPA) :
 Ce projet a été réalisé dans le cadre du projet de MPA dispensé en deuxième année de DUT Informatique à l'IUT de Paris,
 pour l'année universitaire 2021 - 2022.
 
+## Build
+
+```shell
+npm run build
+```
+
+### Build sans minification
+```shell
+npm run build-noclean
+```
+
+### Démarrage du serveur
+```shell
+npm run server
+```
+
 ## Synposis
 
 4Zem est une startup spécialisée dans la refonte des sites Web pour les communes et villages français à fort potentiel
