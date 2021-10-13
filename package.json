@@ -5,16 +5,18 @@
     "grunt": "^1.4.1",
     "grunt-cli": "^1.4.3",
     "grunt-contrib-compress": "^2.0.0",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-nodeunit": "~0.4.1",
-    "grunt-contrib-uglify": "~0.5.0",
-    "grunt-critical": "^2.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
     "grunt-cwebp": "^3.0.3",
-    "grunt-purgecss": "^4.0.3"
+    "grunt-minify-html": "^3.0.0",
+    "grunt-mkdir": "^1.1.0",
+    "grunt-processhtml": "^0.4.2",
+    "grunt-uncss": "^0.10.1"
   },
   "scripts": {
-    "build": "grunt cwebp && cwebp.cmd && grunt purgecss && grunt critical && grunt compress",
-    "compress": "grunt compress",
+    "build": "grunt mkdir && grunt cwebp && compress.cmd && grunt copy && grunt uncss && grunt processhtml && grunt minifyHtml && grunt cssmin && grunt uglify && grunt compress",
+    "build-noclean": "grunt mkdir && grunt cwebp && compress.cmd && grunt copy && grunt uncss && grunt processhtml && && grunt compress",
     "server": "npx http-server -b -c 31536000"
   }
 }

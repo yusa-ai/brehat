@@ -1,14 +1,1 @@
-/* Bouton de retour en haut de page */
-
-let btn = $("#scroll-to-top");
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-        btn.show();
-    } else {
-        btn.hide();
-    }
-});
-
-btn.on("click", function () {
-    window.scrollTo(0, 0);
-});
+let btn=$("#scroll-to-top");$(window).scroll(function(){300<$(window).scrollTop()?btn.show():btn.hide()}),btn.on("click",function(){window.scrollTo(0,0)});

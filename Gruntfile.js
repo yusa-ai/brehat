@@ -1,5 +1,18 @@
 module.exports = function (grunt) {
     grunt.initConfig({
+        mkdir: {
+            build: {
+                options: {
+                    create: [
+                        'build',
+                        'build/img',
+                        'build/img/320',
+                        'build/img/640',
+                        'build/img/1024'
+                    ]
+                },
+            },
+        },
         cwebp: {
             static: {
                 options: {
@@ -7,43 +20,78 @@ module.exports = function (grunt) {
                     q: 50
                 },
                 files: {
-                    './build/img/background.webp': './img/background.png',
-                    './build/img/brehat.webp': './img/brehat.png',
-                    './build/img/chapelle.webp': './img/chapelle.jpg',
-                    './build/img/logo.webp': './img/logo.png',
-                    './build/img/office.webp': './img/office.jpg',
-                    './build/img/port.webp': './img/port.jpg'
+                    'build/img/background.webp': 'img/background.png',
+                    'build/img/brehat.webp': 'img/brehat.png',
+                    'build/img/chapelle.webp': 'img/chapelle.jpg',
+                    'build/img/logo.webp': 'img/logo.png',
+                    'build/img/office.webp': 'img/office.jpg',
+                    'build/img/port.webp': 'img/port.jpg'
                 }
             }
         },
-        purgecss: {
-            bootstrap: {
-                options: {
-                    content: ['./index.htm']
-                },
-                files: {
-                    './build/css/bootstrap.css': ['./bootstrap-5.1.3-dist/css/bootstrap.min.css']
-                }
+        copy: {
+            htm: {
+                src: 'build.htm',
+                dest: 'build/index.htm',
+                options: {}
             },
-            style: {
-                options: {
-                    content: ['./index.htm']
-                },
+            css: {
+                src: 'css/style.css',
+                dest: 'build/css/main.css',
+                options: {}
+            },
+            js: {
+                src: 'js/main.js',
+                dest: 'build/js/main.js',
+                options: {}
+            },
+            favicon: {
+                src: 'img/favicon.png',
+                dest: 'build/img/favicon.png',
+                options: {}
+            },
+        },
+        uncss: {
+            build: {
                 files: {
-                    './build/css/style.css': ['./css/style.css']
+                    'build/css/main.css': ['build.htm']
                 }
             }
         },
-        critical: {
-            index: {
-                options: {
-                    base: './',
-                    css: ['./build/css/style.css', './build/css/bootstrap.css'],
-                    width: 320,
-                    height: 70
-                },
-                src: './index.htm',
-                dest: './build/index.htm'
+        processhtml: {
+            options: {
+                customBlockTypes: ['custom-blocktypes.js']
+            },
+            dist: {
+                files: {
+                    'build/index.htm': ['build/index.htm']
+                }
+            }
+        },
+        minifyHtml: {
+            options: {},
+            dist: {
+                files: {
+                    'build/index.htm': 'build/index.htm'
+                }
+            }
+        },
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'build/css/',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'build/css/',
+                    ext: '.css'
+                }]
+            }
+        },
+        uglify: {
+            my_target: {
+                files: {
+                    'build/js/main.js': ['build/js/main.js']
+                }
             }
         },
         compress: {
@@ -55,9 +103,9 @@ module.exports = function (grunt) {
                     }
                 },
                 expand: true,
-                cwd: './build/',
+                cwd: 'build/',
                 src: ['**/*.htm'],
-                dest: './build/',
+                dest: 'build/',
                 extDot: 'last',
                 ext: '.htm.br'
             },
@@ -69,9 +117,9 @@ module.exports = function (grunt) {
                     }
                 },
                 expand: true,
-                cwd: './build/',
+                cwd: 'build/',
                 src: ['**/*.css'],
-                dest: './build/',
+                dest: 'build/',
                 extDot: 'last',
                 ext: '.css.br'
             },
@@ -83,17 +131,22 @@ module.exports = function (grunt) {
                     }
                 },
                 expand: true,
-                cwd: './build/',
+                cwd: 'build/',
                 src: ['**/*.js'],
-                dest: './build/',
+                dest: 'build/',
                 extDot: 'last',
                 ext: '.js.br'
             }
         }
     })
 
+    grunt.loadNpmTasks('grunt-mkdir');
     grunt.loadNpmTasks('grunt-cwebp');
-    grunt.loadNpmTasks('grunt-purgecss');
-    grunt.loadNpmTasks('grunt-critical');
+    grunt.loadNpmTasks('grunt-uncss');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-processhtml');
+    grunt.loadNpmTasks('grunt-minify-html');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compress');
 }
