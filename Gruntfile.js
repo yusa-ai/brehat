@@ -51,18 +51,11 @@ module.exports = function (grunt) {
                 options: {}
             },
         },
-        uncss: {
-            build: {
-                files: {
-                    'build/css/main.css': ['build.htm']
-                }
-            }
-        },
         processhtml: {
             options: {
                 customBlockTypes: ['custom-blocktypes.js']
             },
-            dist: {
+            build: {
                 files: {
                     'build/index.htm': ['build/index.htm']
                 }
@@ -70,14 +63,14 @@ module.exports = function (grunt) {
         },
         minifyHtml: {
             options: {},
-            dist: {
+            build: {
                 files: {
                     'build/index.htm': 'build/index.htm'
                 }
             }
         },
         cssmin: {
-            target: {
+            css: {
                 files: [{
                     expand: true,
                     cwd: 'build/css/',
@@ -88,7 +81,7 @@ module.exports = function (grunt) {
             }
         },
         uglify: {
-            my_target: {
+            js: {
                 files: {
                     'build/js/main.js': ['build/js/main.js']
                 }
@@ -142,7 +135,6 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-mkdir');
     grunt.loadNpmTasks('grunt-cwebp');
-    grunt.loadNpmTasks('grunt-uncss');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-minify-html');

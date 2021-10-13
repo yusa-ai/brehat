@@ -35,6 +35,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    color: #14679e;
+}
+
 .g-padding {
     padding-left: var(--global-padding);
     padding-right: var(--global-padding);

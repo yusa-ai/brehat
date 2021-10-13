@@ -11,12 +11,11 @@
     "grunt-cwebp": "^3.0.3",
     "grunt-minify-html": "^3.0.0",
     "grunt-mkdir": "^1.1.0",
-    "grunt-processhtml": "^0.4.2",
-    "grunt-uncss": "^0.10.1"
+    "grunt-processhtml": "^0.4.2"
   },
   "scripts": {
-    "build": "grunt mkdir && grunt cwebp && compress.cmd && grunt copy && grunt uncss && grunt processhtml && grunt minifyHtml && grunt cssmin && grunt uglify && grunt compress",
-    "build-noclean": "grunt mkdir && grunt cwebp && compress.cmd && grunt copy && grunt uncss && grunt processhtml && && grunt compress",
+    "build": "grunt mkdir && grunt cwebp && compress.cmd && grunt copy && grunt processhtml && grunt minifyHtml && grunt cssmin && grunt uglify && grunt compress",
+    "build-noclean": "grunt mkdir && grunt cwebp && compress.cmd && grunt copy && grunt processhtml && grunt critical && grunt compress",
     "server": "npx http-server -b -c 31536000"
   }
 }
