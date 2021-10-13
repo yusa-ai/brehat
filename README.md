@@ -29,7 +29,7 @@ npm run build-noclean
 npm run server
 ```
 
-## Synposis
+## Synopsis
 
 4Zem est une startup spécialisée dans la refonte des sites Web pour les communes et villages français à fort potentiel
 touristique.  
