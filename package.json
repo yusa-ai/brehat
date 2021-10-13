@@ -14,8 +14,9 @@
     "grunt-processhtml": "^0.4.2"
   },
   "scripts": {
-    "build": "grunt mkdir && grunt cwebp && compress.cmd && grunt copy && grunt processhtml && grunt minifyHtml && grunt cssmin && grunt uglify && grunt compress",
-    "build-noclean": "grunt mkdir && grunt cwebp && compress.cmd && grunt copy && grunt processhtml && grunt critical && grunt compress",
-    "server": "npx http-server -b -c 31536000"
+    "build": "grunt mkdir && grunt cwebp && grunt copy && grunt processhtml && grunt minifyHtml && grunt cssmin && grunt uglify && grunt compress",
+    "build-noclean": "grunt mkdir && grunt cwebp && grunt copy && grunt processhtml && grunt critical && grunt compress",
+    "server": "npx http-server -b -c 31536000",
+    "cimg": "compress.cmd"
   }
 }

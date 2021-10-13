@@ -17,6 +17,8 @@ pour l'année universitaire 2021 - 2022.
 npm run build
 ```
 
+Sur Windows, la génération des images compressées est réalisée à l'aide de `npm run cimg` et nécessite [cwebp](https://developers.google.com/speed/webp).
+
 ### Build sans minification
 ```shell
 npm run build-noclean
