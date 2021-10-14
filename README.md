@@ -17,7 +17,7 @@ pour l'année universitaire 2021 - 2022.
 npm run build
 ```
 
-Sur Windows, la génération des images compressées est réalisée à l'aide de `npm run cimg` et nécessite [cwebp](https://developers.google.com/speed/webp).
+Sur Windows, la génération des images compressées (320w, 640w et 1024w) nécessite [cwebp](https://developers.google.com/speed/webp) et est réalisée à l'aide de `npm run cimg`.
 
 ### Build sans minification
 ```shell
