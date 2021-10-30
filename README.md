@@ -1,6 +1,6 @@
 ![mairie](./img/logo.svg)
 
-# Méthode de Production d'Application
+# Méthodologie de la production d'applications
 
 Ce repo contient le code source ainsi que les fichiers Access (dossier data) correspondant aux deux missions du projet
 de Méthode de Production d'Application (MPA) :
