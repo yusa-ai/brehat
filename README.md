@@ -1,4 +1,4 @@
-![mairie](./img/logo.svg)
+![hotel-de-ville](./img/logo.svg)
 
 # Méthodologie de la production d'applications
 
