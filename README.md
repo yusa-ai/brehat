@@ -1,6 +1,6 @@
-![hotel-de-ville](./img/logo.svg)
+![Logo](./img/logo.svg)
 
-# Méthodologie de la production d'applications
+# Île-de-Bréhat
 
 Ce repo contient le code source ainsi que les fichiers Access (dossier data) correspondant aux deux missions du projet
 de Méthodologie de la production d'applications (MPA) :
